@@ -107,7 +107,7 @@ The abstract should briefly summarize the contents of the paper in
 
 \section{Introduction}
 
-Place holder \cite{ref_article1}!
+Place holder!
 
 
 \section{Background}
@@ -122,7 +122,7 @@ For instance, at a $20\%$ poisoning rate, the classification error on an SVM wit
 More recently, Paudice \emph{et al.} \cite{paudice2018label} proposed an ALFA algorithm with $O(n^2)$ time complexity for attacking neural network models, which requires retraining the model at each iteration.
 Zhao \emph{et al.} \cite{zhang2020adversarial} demonstrated that \emph{graph neural networks} (GNNs) can also be affected by ALFA algorithms and proposed a \emph{community-preserving self-supervised} defense to mitigate this threat.
 
-Recent research on integrity attacks has primarily focused on image data trained on NNs \citep{aryal2022analysis}. 
+Recent research on integrity attacks has primarily focused on image data trained on NNs \cite{aryal2022analysis}. 
 \cite{sasaki2019embedding} and \cite{li2021backdoor} have explored the implications of backdoor attacks on malware detectors, but these attacks rely on the gradient optimization algorithm and are applicable exclusively to NNs. 
 In this work, we evaluate the effectiveness of label-flipping attacks on various models and employ \diva to detect potential threats.
 
@@ -162,7 +162,7 @@ In order to maximize $\ell(\Dte, f')$, the adversary assumes $\Dtr$ and $\Dte$ s
 
 \begin{figure}[t!]
     \centering
-    \includegraphics[width=\columnwidth]{images_poisoning/fake_acc.pdf}
+    \includegraphics[width=\columnwidth]{images/fake_acc.pdf}
     \caption[Theoretical Performance Degradation Under Poisoning Attacks.]{The theoretical performance degradation from poisoning attacks at various rates for easy and hard datasets.}
     \label{fig.fake}
 \end{figure}
@@ -385,7 +385,7 @@ The behavior of SLN (gray lines in Figure~\ref{fig.real_acc}) is different from 
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=\columnwidth]{images_poisoning/flfa_acc_all.pdf}
+    \includegraphics[width=\columnwidth]{images/flfa_acc_all.pdf}
     \caption[Training and Test Accuracy Under Poisoning Attacks]{
         The training and test accuracy at various poisoning rates exhibit similar patterns under different attacks on the same dataset. However, the difficulty of the classification task has a large influence on the behavior of attacks.
     }
